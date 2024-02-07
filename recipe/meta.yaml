@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://git.ligo.org/gabriele-vajente/loopdesigner/-/archive/{{ version }}/loopdesigner-{{ version }}.tar.gz
-  sha256: dfad4453beca4e4d9bfe3c27332d7727422b55f87f0eb764ee2a377f3ec27a7a
+  sha256: aaa09ab3057e231db8cfe6031ccc4cacab6831d260e13e171b254c079bdf6347
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
