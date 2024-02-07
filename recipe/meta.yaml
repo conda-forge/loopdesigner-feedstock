@@ -27,6 +27,7 @@ requirements:
     - pyqtgraph
     - pyqt
     - gpstime
+    - gwpy
 
 test:
   imports:
