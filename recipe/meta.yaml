@@ -1,5 +1,5 @@
 {% set name = "loopdesigner" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://git.ligo.org/gabriele-vajente/loopdesigner/-/archive/{{ version }}/loopdesigner-{{ version }}.tar.gz
-  sha256: e2158038cf6635b65c95a5b8b0a0afe9f11ceaf5261500552dba601148cc9b00
+  sha256: aaa09ab3057e231db8cfe6031ccc4cacab6831d260e13e171b254c079bdf6347
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
   noarch: python
 
 requirements:
@@ -27,6 +27,7 @@ requirements:
     - pyqtgraph
     - pyqt
     - gpstime
+    - gwpy
 
 test:
   imports:
