@@ -1,5 +1,5 @@
 {% set name = "loopdesigner" %}
-{% set version = "0.1.2" %}
+{% set version = "0.1.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://git.ligo.org/gabriele-vajente/loopdesigner/-/archive/{{ version }}/loopdesigner-{{ version }}.tar.gz
-  sha256: aaa09ab3057e231db8cfe6031ccc4cacab6831d260e13e171b254c079bdf6347
+  sha256: 9ea243040abdb7f406b13d8cce998bbd7ffea0691f276868f8be6bbb6046a128
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
